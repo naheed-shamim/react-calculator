@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'Staging'
+      name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
       steps:
@@ -50,6 +50,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'naheed-calc'
-          slot-name: 'Staging'
+          slot-name: 'Production'
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_18d8c7ad75bd481891b3d4305aa5ef33 }}
           package: .
