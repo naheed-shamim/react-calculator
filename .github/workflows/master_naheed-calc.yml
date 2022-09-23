@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'naheed-calc'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_18d8c7ad75bd481891b3d4305aa5ef33 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7FFAA9E9E36E42DE85BA8868CE004244 }}
           package: .
